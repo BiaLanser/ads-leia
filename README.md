@@ -14,4 +14,4 @@ Leia+ é um sistema simples e direto que permite gerenciar o acervo de livros de
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* Bianca Lanser Peres
+* **Bianca Lanser Peres**
