@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leia+ | Painel</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard light-mode">
+  <div class="sidebar">
+    <img src="assets/logo.png" alt="Logo" class="logo-sidebar" />
+    <nav>
+      <ul>
+        <li><button onclick="loadPage('livros')">📚 Acervo</button></li>
+        <li><button onclick="loadPage('emprestimos')">📖 Empréstimos</button></li>
+        <li><button onclick="loadPage('frases')">💬 Frases</button></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1 id="titulo-leia">Leia+</h1>
+      <button id="toggleMode">🌙 Modo Escuro</button>
+    </header>
+
+    <section id="content">
+      <p>Selecione uma opção no menu.</p>
+    </section>
+
+    <footer>
+      <p>Leia+ &copy; 2025</p>
+    </footer>
+  </div>
+
+  <script src="js/darkmode.js"></script>
+  <script src="js/dashboard.js"></script>
+  <!-- jQuery e DataTables -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+
+</body>
+</html>

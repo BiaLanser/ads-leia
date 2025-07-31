@@ -1,0 +1,242 @@
+/*estilo para a página de login*/
+body.login-page {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #ffe6f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/*caixa do login centralizada com sombra e bordas arredondadas*/
+.login-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.4);
+  text-align: center;
+  width: 300px;
+}
+
+/*logo do login centralizada acima do formulário*/
+.logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/*campos de texto do formulário*/
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ffc0cb;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/*contêiner para o campo de senha (permite botão de exibir senha)*/
+.password-container {
+  position: relative;
+}
+
+/*botão de ocultar senha*/
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-70%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #ff69b4;
+}
+
+/*botão de login*/
+button[type="submit"] {
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #e758a1;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/*layout flexível horizontal: sidebar + conteúdo*/
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/*barra lateral da esquerda*/
+.sidebar {
+  width: 200px;
+  background: #ffb6c1;
+  color: white;
+  padding: 20px;
+}
+
+/*logo na sidebar*/
+.logo-sidebar {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+/*remove marcadores e padding da lista*/
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*estilo dos botões do menu lateral*/
+.sidebar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  font-weight: 900;
+}
+
+.sidebar button:hover {
+  text-decoration: underline;
+}
+
+/*área principal ocupa o restante do espaço*/
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+/*cabeçalho com botão de darkmode*/
+header {
+  background: #ffe6f0;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*botão darkmode*/
+#toggleMode {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: #ff69b4;
+  color: white;
+  cursor: pointer;
+}
+
+/*área onde o conteúdo de cada página é carregado*/
+section#content {
+  flex: 1;
+  padding: 20px;
+}
+
+/*footer*/
+footer {
+  background: #ffe6f0;
+  padding: 10px;
+  text-align: center;
+}
+
+/*cor do titulo da página*/
+#titulo-leia{
+  color: rgb(224, 43, 112);;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #1a1a1a;
+  color: white;
+}
+
+body.dark-mode .main-content {
+  background: #2a2a2a;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background: #464545;
+  color: #fff;
+}
+
+body.dark-mode .sidebar {
+  background: #ff5c8a;
+}
+
+body.dark-mode .sidebar button {
+  color: #fff;
+}
+
+/*Emprestimo*/
+
+/*espaçamento entre labels dos formulários*/
+form label {
+  display: block;
+  margin: 10px 0;
+}
+
+/*campos de formulário de empréstimo*/
+form input, form select {
+  padding: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/*botão de registrar empréstimo*/
+form button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#tabelaEmprestimos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+/*células da tabela com borda e padding*/
+#tabelaEmprestimos th, #tabelaEmprestimos td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/*desativa o ocultar senha do navegador*/
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-clear-button,
+input[type="password"]::-webkit-inner-spin-button {
+  display: none;
+  pointer-events: none;
+}
